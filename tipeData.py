@@ -35,7 +35,7 @@ if a == 3 and b == 3: #-> and itu kedua syarat harus terpenuhi
 c = 4
 d = "string"
 
-if a == 5 or d == "string": #-> or salah satu syarat terpenuhi
+if a == 5 or d == "string": #-> or salah satu harus syarat terpenuhi
     print("nilai salah satu syarat terpenuhi")
 
 #========================
@@ -53,21 +53,21 @@ print(suep)
 """
 
 #=======================================
-format = f"nilai suep adalah {suep}"
+format = f"nilai suep adalah {suep}" #-> f memungkinkan untuk menulis variabel atau melakukan operasi dalam string, namun tidak dianggap string 
 tanpaFormat = "nilai suep adalah ", suep
 print(format)
 print(tanpaFormat)
 
-upper = "{:30}".format("ini adalah format")
+upper = "{:30}".format("ini adalah format") # "{:30}" -> digunakan sebagai template string, isi template diletakkan dala fungsi format()
 print(upper)
 print(len(upper))
 print(type(upper))
 
 #=====================
-rataKanan = "|{:>30}|".format("ini adalah format")
-rataKiri = "|{:<30}|".format("ini adalah format")
-rataTengah = "|{:^30}|".format("ini adalah format")
-maksimal = "|{:.30}|".format("ini adalah format teks python dalam vscode")
+rataKanan = "|{:>30}|".format("ini adalah format") #-> mengatur isi template menjadi rata kiri
+rataKiri = "|{:<30}|".format("ini adalah format") #-> mengatur isi template menjadi rata atas
+rataTengah = "|{:^30}|".format("ini adalah format") #-> mengatur isi template menjadi rata tengah
+maksimal = "|{:.30}|".format("ini adalah format teks python dalam vscode") #-> mengatur isi template hanya memiliki maksimal panjang karakter 30, jika karakter melebihi template, maka karakter yang diluar panjang 30 tidak akan ditulis
 print(rataKanan)
 print(rataKiri)
 print(rataTengah)
