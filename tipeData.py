@@ -18,6 +18,8 @@ print("tipe data ini adalah", type(variable_float))
 
 # Casting adlah mengubah tipe data ke tipe data yang lain
 # str() fungsi untuk mengubah suatu tipe data menjadi tipe data string
+# int()
+# float()
 variable_string = str(variable_integer)
 print("tipe data setelah diubah", type(variable_string))
 
